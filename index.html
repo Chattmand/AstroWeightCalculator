@@ -3,10 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Astro Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
   </head>
   <body>
-     <!-- Write your markup here  -->
-
+    <h1>I'm an Astro Weight Calculator!</h1>
+    <input id="user-weight" placeholder="Enter Weight"></input>
+    <select id="planets" class="dropdown-content">
+      <option selected disabled>select a planet</option>
+      
+    </select>
+    <p id="output"></p>
+    <button id="calculate-button" onclick="handleClickEvent()" class="calculate-button">calculate</button>
     <script src="main.js" charset="utf-8"></script>
+    
   </body>
+  <style type="text/css">
+    p { font:30px Arial; color:White; }
+  
+ </style>
+ <style type="text/css">     
+  select {
+      width:200px;
+      height:20px;
+    }
+</style>
 </html>
+
+
